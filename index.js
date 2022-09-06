@@ -54,12 +54,6 @@ function combinarDosArrays(array1, array2){
 }
 
 function combinarNArrays(array){
-    // var arrayCombined = array.flat()
-    // var arrayCombinedWithoutDuplicates = arrayCombined.filter((item,
-    //     index) => arrayCombined.indexOf(item) == index)
-
-    // return arrayCombinedWithoutDuplicates.sort((a,b) => a-b)
-
     var resultado = []
 
     array.forEach(element => {

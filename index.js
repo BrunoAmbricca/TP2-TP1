@@ -1,7 +1,13 @@
 import * as fs from 'fs';
 
 function leerArchivoComoString(nombreArchivo){
-    return fs.readFileSync(nombreArchivo, 'utf8')
+    try{
+        var result = fs.readFileSync(nombreArchivo, 'utf8')
+    }
+    catch(ex){
+        console.log(ex.message)
+    }
+    return result
 }
 
 function escribirTextoEnArchivo(ruta, texto, flag){
